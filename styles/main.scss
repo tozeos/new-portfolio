@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Color variables */
+
+$bg: rgba(33, 24, 60, 1);
+$bgtrans: rgba(30, 30, 30, 0.9);
+$highlight: rgba(248, 24, 99, 1);
+$hover: rgba(24, 221, 255, 1);
+$text: rgba(249, 250, 251, 1);
+$texthover: rgba(33, 24, 60, 1);
+
+/*  Styles */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+ol {
+	padding: 0 0 0 24px;
+}
+
+ol > li ol > li {
+	list-style: upper-alpha;
+}
+
+#container {
+	background-color: rgba(33, 24, 60, 1);
+	color: $text;
+	background-size: 910px;
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-image: url(../src/background.webp);
+	background-attachment: fixed;
+	margin: 0 auto;
+	justify-content: center;
+	margin-top: 5rem;
+	padding: 0 5rem;
+	margin-bottom: 10rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+aside {
+	position: fixed;
+	left: 5%;
+}
+
+#navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#logo {
+	cursor: pointer;
+	width: 175px;
+}
+
+.biography {
+	font-weight: 500;
+	font-size: 16px;
+	width: 30rem;
+	padding: 2rem 0;
+
+	span {
+		color: $highlight;
+	}
+}
+
+.menu_item {
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: 15px;
+	padding: 1rem 0;
+	width: 370px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	background-color: $highlight;
+	font-weight: 500;
+	transition: 0.5s;
+
+	text-decoration: none;
+	color: $text;
+
+	&:hover {
+		background-color: $hover;
+		color: $texthover;
+		transition: 0.3s;
+	}
+}
+
+footer {
+	font-size: 12px;
+	font-weight: 500;
+	padding: 2rem 0;
+
+	span {
+		color: $highlight;
+	}
+
+	a {
+		color: $highlight;
+		text-decoration: none;
+		transition: 0.5s;
+
+		&:hover {
+			color: $hover;
+			transition: 0.3s;
+		}
+	}
+}
+
+section {
+	position: absolute;
+	align-self: flex-start;
+	width: 60rem;
+	background-color: $bgtrans;
+	border: 2px solid $hover;
+	border-radius: 8px 8px 0 0;
+
+	margin-left: 30rem;
+}
+
+.article_title {
+	padding: 1rem 2rem;
+	border-radius: 5px 5px 0 0;
+	background-color: $hover;
+	color: $texthover;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.article_content {
+	padding: 3px 4rem;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+
+	a {
+		color: $hover;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	em {
+		background-color: $highlight;
+		padding: 0.5rem 0.2rem;
+		display: block;
+		border-radius: 0.2rem;
+		padding-left: 2rem;
+	}
+
+	strong {
+		color: $hover;
+	}
+}
